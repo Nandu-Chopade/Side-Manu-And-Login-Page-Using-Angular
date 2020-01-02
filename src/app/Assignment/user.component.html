@@ -1,0 +1,46 @@
+
+<div class="container">
+ <div class="panel-body">
+
+<div class="panel panel-primary">
+               <div class="panel-heading">
+            Search User Information
+               </div>
+            
+               <div class="wrapper">
+                <div class="search_box">
+                    <i></i>
+                    <input type="text" Placeholder="Search name here " id="round" [(ngModel)]="userText" class="icon"/>
+                   
+                  <h3>{{userText}}</h3> 
+                   
+           
+                </div>
+              </div>
+     
+
+            <table class="table table-bordered" id="">
+                <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Email Id</th>
+                    <th>Phone Number</th>
+                 </tr>
+            </thead>
+            <tbody>
+               
+                <tr  *ngFor="let Info of userInformation | search: userText ">
+                   
+                    <td>{{Info.Id }}</td>
+                    <td>{{Info.usreName | uppercase  }}</td>
+                    <td>{{Info.userEmailId | lowercase }}</td>
+                    <td>{{Info.userphone}} </td>
+                    
+                </tr>
+            
+            </tbody>
+        </table>            
+    </div>
+</div>
+</div>    

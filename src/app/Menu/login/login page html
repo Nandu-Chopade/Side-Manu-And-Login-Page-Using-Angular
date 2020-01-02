@@ -1,0 +1,37 @@
+<div class="col-6 col-s-9  ">  
+ <div *ngIf="showloginPage" >
+   <div class="main" *ngIf="Remove" >
+      <div class="removeicon">
+         <span class="glyphicon glyphicon-remove" (click)="getRemove()"  >
+
+         </span> 
+      </div>
+         <div class="loginheader">
+            <h4>Login</h4>
+         </div>
+         <form>
+            <div class="input-container">
+              <i class="icon user"></i>
+                <input type="text" name="Username" placeholder="User Name" class="input-field" />
+            </div>
+            <div class="input-container">
+              <i class="icon passwords"></i>
+                 <input type="text" name="Password"  placeholder="Password" class="input-field" />
+            </div>
+            <button class=" btn1" > <span class="glyphicon glyphicon-circle-arrow-right"></span>Log In</button>
+            <div class="center">
+               OR
+            </div>
+            <div class="center">
+               Register Using Sign Up
+            </div>
+            <button class=" btn2" > <span class="glyphicon glyphicon-circle-arrow-left"></span>Sign Up</button>
+          </form>
+        </div>
+      </div>
+   </div>
+
+
+
+     
+   
